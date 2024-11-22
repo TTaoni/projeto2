@@ -1,0 +1,49 @@
+.map-container {
+    iframe {
+      border: 0;
+      border-radius: 10px;
+    }
+  }
+  
+  .text-section {
+    text-align: center;
+    margin: 20px;
+  
+    h2 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      font-size: 1rem;
+      color: #666;
+    }
+  }
+  
+  .schedule-button {
+    background-color: #d4af37;
+    color: white;
+    font-weight: bold;
+    margin: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 30px;
+  
+    .footer-text {
+      font-size: 0.9rem;
+      color: #888;
+    }
+  }
+  ion-header {
+    --background: #fff;
+    ion-title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #faf8f8;
+    }
+  }
+  
