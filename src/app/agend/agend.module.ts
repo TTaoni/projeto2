@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { DataPageRoutingModule } from './data-routing.module';
+import { AgendPageRoutingModule } from './agend-routing.module';
 
-import { DataPage } from './data.page';
+import { AgendPage } from './agend.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DataPageRoutingModule
+    AgendPageRoutingModule
   ],
-  declarations: [DataPage]
+  declarations: [AgendPage]
 })
-export class DataPageModule {}
+export class AgendPageModule {}

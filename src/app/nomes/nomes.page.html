@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Confirmação de Agendamento</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+    <!-- Campo de Nome -->
+    <ion-item>
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input
+        type="text"
+        name="nome"
+        required
+        [(ngModel)]="nome"
+        #nomeInput="ngModel"
+        placeholder="Digite seu nome"
+      ></ion-input>
+    </ion-item>
+    <div *ngIf="form.submitted && !nomeInput.valid" class="error-message">
+      O nome é obrigatório.
+    </div>
+
+    <!-- Campo de Número de Celular -->
+    <ion-item>
+      <ion-label position="floating">Número de Celular</ion-label>
+      <ion-input
+        type="tel"
+        name="numero"
+        required
+        pattern="[0-9]{10,11}"
+        [(ngModel)]="numero"
+        #numeroInput="ngModel"
+        placeholder="Digite seu número de celular"
+      ></ion-input>
+    </ion-item>
+    <div *ngIf="form.submitted && (!numeroInput.valid || !isValidPhoneNumber(numero))" class="error-message">
+      Insira um número de celular válido (10-11 dígitos).
+    </div>
+
+    <!-- Botão de Enviar -->
+    <ion-button routerLink="/concluido" expand="block" type="submit" color="primary" [disabled]="!form.valid">Enviar</ion-button>
+  </form>
+</ion-content>
+

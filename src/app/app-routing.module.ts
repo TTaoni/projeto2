@@ -6,6 +6,23 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
+
+  {
+    path: 'agendamento',
+    loadChildren: () => import('./agendamento/agendamento.module').then( m => m.AgendamentoPageModule)
+  },
+  {
+    path: 'agend',
+    loadChildren: () => import('./agend/agend.module').then( m => m.AgendPageModule)
+  },
+  {
+    path: 'nomes',
+    loadChildren: () => import('./nomes/nomes.module').then( m => m.NomesPageModule)
+  },
+  {
+    path: 'concluido',
+    loadChildren: () => import('./concluido/concluido.module').then( m => m.ConcluidoPageModule)
+  },
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
@@ -15,13 +32,13 @@ const routes: Routes = [
     loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
   },
   {
-    path: 'agendamento',
-    loadChildren: () => import('./agendamento/agendamento.module').then( m => m.AgendamentoPageModule)
+    path: 'cadastro',
+    loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
   },
-  {
-    path: 'data',
-    loadChildren: () => import('./data/data.module').then( m => m.DataPageModule)
-  }
+ 
+ 
+  
+  
 ];
 @NgModule({
   imports: [

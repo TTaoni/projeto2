@@ -1,0 +1,44 @@
+ion-header {
+    --background: #3e8ed0;
+    --color: #fff;
+  }
+  
+  ion-content {
+    padding: 1rem;
+  
+    h2 {
+      text-align: center;
+      margin: 1rem 0;
+      color: #333;
+    }
+  
+    ion-item {
+      margin-bottom: 1rem;
+    }
+  
+    h3 {
+      margin: 0.5rem 0;
+      color: #555;
+    }
+  
+    ion-grid {
+      margin-top: 0.5rem;
+    }
+  
+    ion-button {
+      font-size: 0.9rem;
+      --background: #4caf50;
+      --background-hover: #388e3c;
+      --color: #fff;
+    }
+  }
+  
+  ion-footer {
+    ion-toolbar {
+      --background: #3e8ed0;
+      ion-button {
+        --color: #fff;
+      }
+    }
+  }
+  

@@ -18,7 +18,20 @@ const routes: Routes = [
       {
         path: 'tab3',
         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+
       },
+      {
+        path: 'home',
+        loadChildren: () =>
+          import('../cadastro/cadastro.module').then((m) => m.CadastroPageModule),
+      },
+    
+      {
+        path: '',
+        redirectTo: 'cadastro', // ou outro componente inicial
+        pathMatch: 'full',
+      },
+      
       {
         path: '',
         redirectTo: '/tabs/tab1',
